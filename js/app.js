@@ -16,8 +16,7 @@ document.getElementById('buscarBtn').addEventListener('click', (e) => {
 		//Obtain events
 		eventBrite.obtainEvents(textSearch, selectedCat)
 			.then(events => {
-				console.log(events);
-
+				ui.showMessage('Sorry, this is no longer for use(deprecated)', 'alert alert-danger mt-4');
 			})
 	} else {
 		// Show alert if text is empty
